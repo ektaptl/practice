@@ -1,0 +1,546 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.text h2 {
+    font-size: 44px;
+    color: black;
+    font-weight: 700px;
+}
+
+.text p {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.sign-up {
+    display: flex;
+    padding: 15px;
+    background-color: white;
+}
+
+.email {
+    flex: 1;
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    outline: 0;
+
+}
+
+.btn-sign {
+    width: 30%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+.row-logo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.first-logo .img-logo {
+    padding: 40px;
+    width: 100%;
+    height: auto;
+     max-width: 80%;
+}
+
+/* start about section */
+
+
+.row-about {
+    display: flex;
+    padding-top: 50px;
+    background-color: #f4f4f4;
+
+}
+
+.about-left {
+    width: 50%;
+    text-align: left;
+    margin-top: 100px;
+    padding: 15px;
+    margin-left: 100px;
+
+}
+
+.about-left h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: red;
+    border-radius: 7px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.about-left p {
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-left .row-link {
+    color: white;
+    background-color: crimson;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.row-link:hover {
+    background-color: brown;
+}
+
+.about-right {
+    width: 50%;
+}
+
+.row-right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-right .right-text {
+    width: 25%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    margin-right: 20px;
+
+}
+
+.right-text h3 {
+
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.right-text p {
+    margin-bottom: 0;
+}
+
+.first-about-right {
+    margin-top: 30px;
+}
+
+.row2-about {
+    background-image: url("../images/count_about_w3.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    margin: 0 auto;
+   
+}
+
+.row2-about .row2-count {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.count {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.count h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: blueviolet;
+}
+
+.count p {
+    font-size: 16px;
+    color: brown;
+}
+
+/* end about section */
+
+/* start services section */
+
+.services{
+    padding-top: 30px;
+}
+
+.service-title{
+    display: flex;
+    justify-content: center;
+}
+.service-title h2{
+    position: relative;
+    text-align: center;
+    display: inline-block;
+
+}
+.service-title h2::before{
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 40px;
+        height: 2px;
+        top: 15px;
+        left: -60px;
+}
+.services p{
+    text-align: center;
+}
+.service-title h2::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    background-color:red;
+    width: 40px;
+    height: 2px;
+}
+
+.row-services{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+
+}
+.text{
+    text-align: left;
+}
+.text p{
+    font-size: 14px;
+}
+    
+
+.left-sevices{
+    position: relative;
+    width: 50%;
+    padding: 20px 0px;
+}
+
+
+.left-sevices::before{
+    content: "";
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+.left-sevices::after{
+
+    content: "";
+    position: absolute;
+    background-color:blue;
+    width: calc(100% - 55px);
+    height: 2px;
+    top: 0;
+    left: 40px;
+}
+.img-text{
+    display: flex;
+}
+.img-left{
+    padding-right: 20px;
+    position: relative;
+    z-index: 2;
+    
+}
+.img-text::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+    position: absolute;
+    top: 40px;
+    left:10px;
+    color: black;
+    background-color: pink;
+    z-index: 1;
+}
+
+
+/* start features section */
+
+.features{
+    padding-top: 30px;
+}
+.features-text{
+    text-align: center;
+}
+.features h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: black;
+}
+.features span{
+    width: 50px;
+    height: 2px;
+    margin: 0 15px 0 10px;
+    background-color: brown;
+    display: inline-block;
+}
+.row-features{
+    display: flex;
+
+}
+.features-left{
+    width: 50%;
+    margin-left: 50px;
+    padding-top: 70px;
+    text-align: left;
+}
+.btn-features{
+    color: white;
+    background-color: brown;
+    padding: 8px 30px 10px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.features-right{
+    width: 50%;
+    padding-left: 200px;
+}
+.up-img img{
+    width: 400px;
+    height: 300px;
+    border: 6px solid  #f4f4f4;
+    
+}
+.down-img img{
+    width: 400px;
+    height: 300px;
+    border: 6px solid #f4f4f4;
+    position: relative;
+    top:-250px;
+    left:-180px;
+}
+.row2-features{
+    display: flex;
+}
+.feature2-left{
+    margin-left: 50px;
+    padding-right: 30px;
+}
+.feature2-left img{
+    width: 400px;
+    height: 400px;
+    
+}
+.features2-right{
+   padding: 50px;
+}
+.features2-right h3{
+    font-weight: 700;
+    font-size: 30px;
+}
+.features2-right p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.features2-right ul li{
+    padding-bottom: 15px;
+    
+}
+
+.features-text h2{
+    position: relative;
+    display: inline-block;
+}
+.features-text h2::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: red;
+    top: 18px;
+    right: -60px;
+}
+
+.features-text h2::after {
+    
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background-color: red;
+    top: 18px;
+    left: -60px;
+}
+
+/* start contact section */
+
+.contact{
+    padding:60px 0;
+}
+.contact-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-title h2{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    
+}
+.contact-title h2::before{
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 2px;
+    top: 15px;
+    left: -60px;
+}
+
+.contact-title h2::after{
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 50px;
+    height: 2px;
+    top: 15px;
+    left:100px ;
+}
+
+.contact p{
+    text-align: center;
+}
+.row-contact{
+    display: flex;
+}
+.left-info{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-contact{
+    width: 25%;
+    background-color:beige ;
+    padding: 30px 40px;
+    display: block;
+  margin: 20px 25px;
+    text-align: left;
+    
+   
+}
+.left-contact h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:#212529 ;
+}
+.left-contact p{
+    text-align: left;
+}
+.right-contact{
+    width: 50%;
+    padding: 30px;
+    height: 100%;
+    background-color:bisque
+
+}
+.f1 input{
+    padding: 10px 15px;
+    color: #212529;
+    background-color: #ffffff;
+    width:80%;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.f1 input:hover{
+    border: red;
+}
+.f2 input:hover{
+    border: red;
+}
+.f2 input{
+    padding: 10px;
+    color: #212529;
+    background-color: #ffffff;
+    width:80%;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.f3 .msg{
+    padding: 60px;
+    color: #212529;
+    background-color: #ffffff;
+    width: 80%;
+    margin-bottom: 15px;
+    font-size: 14px;
+    
+}
+.f3 .msg:hover{
+    border: red;
+}
+ .f4 .submit{
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.f4{
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* end contact section */
+
+
+

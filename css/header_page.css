@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to left,#fff 85%,#c3f5ff 15%);
+    
+}
+.nav_section{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:linear-gradient(to top,#fff 80%,#c3f5ff 20%);
+    
+}
+.logo{
+    width: 40%;
+    color: white;
+    background-image: linear-gradient(#8d98e3 40%,#854fee 60%);
+    padding-left: 100px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    animation: example 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes example{
+    from{
+        padding-left: 40px;
+    }
+    to{
+        padding-right: 40px;
+    }
+}
+.nav{
+    width: 60%;
+
+    display: flex;
+    justify-content: space-around;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900px;
+    position: relative;
+}
+.nav a:first-child{
+    color: blue;
+}
+.nav a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 25px;
+    left: 0px;
+    background-color: red;
+    transition: all 0.5s linear;
+}
+.nav a:hover::before{
+    width: 100%;
+}
+
+
+
+.main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.left h3{
+    font-size: 50px;
+    font-weight: 400px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.left h3::after{
+    content: "";
+    position: absolute;
+    left: 190px;
+    top: 35px;
+    width: 500px;
+    height: 2px;
+    background-color: aqua;
+}
+.left h2{
+    font-size: 30px;
+    font-weight: 100px;
+    margin-bottom: 15px;
+    
+}
+.left p{
+    font-size: 20px;
+    font-weight: 200px;
+    margin-bottom: 20px;
+    word-spacing: 4px;
+}
+.left a{
+    text-decoration: none;
+    text-align: center;
+    width: 50px;
+    height: 10px;
+    padding: 15px;
+    color: white;
+    background-color: #854fee;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.right img{
+    max-width: 600px;
+    border-radius:87% 13% 93% 7% / 9% 61% 39% 91% ;
+    background-color: aqua;
+
+}
